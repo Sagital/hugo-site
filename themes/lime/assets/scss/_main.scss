@@ -54,6 +54,9 @@ h1,h2,h3,h4,h5,h6,strong{
   background-color: #fff;
   overflow: hidden;
 
+  .pricing-box {
+    min-height: 175px;
+  }
 
   span,div{
     display: block;
@@ -64,7 +67,7 @@ h1,h2,h3,h4,h5,h6,strong{
     font-size: 16px;
   }
   .price{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
   }
 
