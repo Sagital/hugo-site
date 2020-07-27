@@ -25,12 +25,10 @@
 
     <!-- including bootstrap -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="{{.Site.BaseURL}}css/compiled.css"> -->
-
-
+    <!-- <link rel="stylesheet" type="text/css" href="{{.Site.BaseURL}}css/style.css"> -->
     {{ $sass := resources.Get "/scss/bootstrap.scss" }}
-    {{ $style := $sass | resources.ToCSS | resources.Minify}} 
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}"> 
+    {{ $style := $sass | resources.ToCSS | resources.Minify}}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
   </head>
   <body>
     

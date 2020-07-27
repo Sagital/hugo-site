@@ -19,6 +19,7 @@
           {{ end }}
         </ul>
         <ul class="ml-auto navbar-nav">
+
             {{ range $key, $value := .Site.Data.social }}
             <li class="nav-item" style="font-size: 22px">
               <a href="{{ $value }}" class="ml-3 text-white btn-{{ $key }}"><i class="fab fa-{{ $key }}"></i></a>
