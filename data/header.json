@@ -1,0 +1,22 @@
+{
+  "brand" : "Green paper",
+  "logo" : "sagital-logo.png",
+  "links" : [
+    {
+      "title" : "Home",
+      "href" : ""
+    },
+    {
+      "title" : "Servicii",
+      "href" : "#features"
+    },
+    {
+      "title" : "Prețuri",
+      "href" : "#pricing"
+    },
+    {
+      "title" : "Contact",
+      "href" : "#contact"
+    }
+  ]
+}

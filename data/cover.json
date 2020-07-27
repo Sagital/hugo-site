@@ -1,0 +1,11 @@
+{
+	"title" : "Transformă ideile în software",
+	"description" : "Ne place ceea ce facem și avem peste 10 ani de experiență; Aplicații proiectate profesionist, livrate la timp și testate atent.",
+	"illustration" : "freelancing.svg",
+	"alt_text" : "Sau aflați mai multe",
+	"alt_href" : "#features",
+	"button" : {
+		"text" : "Contactați-ne",
+		"href" : "#contact"
+	}
+}

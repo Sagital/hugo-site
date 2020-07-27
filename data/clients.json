@@ -1,0 +1,24 @@
+{
+  "title" : "Câțiva dintre clienții noștri",
+  "clients" : [
+
+    {
+      "title": "Hotel Nyota",
+      "image": "hotelnyota.png"
+    },
+
+    {
+      "title" : "Catalog Media",
+      "image" : "catalogmedia.png"
+    },
+    {
+      "title" : "Cardio Class",
+      "image" : "cardioclass.png"
+    },
+    {
+      "title" : "BTI Studios",
+      "image" : "btistudios.png"
+    }
+
+  ]
+}
