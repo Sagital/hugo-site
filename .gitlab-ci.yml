@@ -12,6 +12,10 @@ build:
     - master
   # fetching submodules here because usually themes are git submodules
   # see also the commented variables below
+
+  before_script:
+    - docker info
+
   script:
     - echo -n $SAGITAL_REGISTRY_PASSWORD | docker login -u $SAGITAL_REGISTRY_USER --password-stdin $CI_REGISTRY
     # the image is tagged as latest, because it is the master branch
