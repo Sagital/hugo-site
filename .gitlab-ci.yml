@@ -2,7 +2,7 @@ stages:
   - build
   - deploy
 
-Build:
+build:
   stage: build
   # remember to use specific version in your build images
   # see https://blog.callr.tech/building-docker-images-with-gitlab-ci-best-practices/
@@ -24,20 +24,3 @@ Build:
   # -> https://gitlab.com/gitlab-org/gitlab-runner/issues/2148?
   # -> maybe an http proxy issue specific to our platform.
 
-Deploy:
-  stage: deploy
-  script: *deploy
-  allow_failure: false
-  # deploying master only
-  only:
-    - master
-  environment:
-    name: production
-  # we tag specific runners here in our platform
-  tags:
-    - deployment
-  variables:
-    # because the deployment stage does not need the source code anymore
-    # we set GIT_STRATEGY to none
-    GIT_STRATEGY: none
-    # those variables are being used in the *deploy hidden job (above)
