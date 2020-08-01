@@ -13,10 +13,10 @@ build:
   # fetching submodules here because usually themes are git submodules
   # see also the commented variables below
   script:
-    - echo -n $CI_JOB_TOKEN | docker login -u gitlab-ci-token --password-stdin $CI_REGISTRY
+    - echo -n $SAGITAL_REGISTRY_PASSWORD | docker login -u $SAGITAL_REGISTRY_USER --password-stdin $CI_REGISTRY
     # the image is tagged as latest, because it is the master branch
-    - docker build -t $CI_REGISTRY_IMAGE:latest .
-    - docker push $CI_REGISTRY_IMAGE:latest
+    - docker build -t $CI_REGISTRY/sagital/hugo-site:latest .
+    - docker push $CI_REGISTRY/sagital/hugo_site:latest
   # variables:
   #   GIT_SUBMODULE_STRATEGY: recursive
   # -> this did not work for us, we had to use before_script above.
