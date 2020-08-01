@@ -39,8 +39,8 @@ build:
     - echo -n $SAGITAL_REGISTRY_PASSWORD | docker login -u $SAGITAL_REGISTRY_USER --password-stdin $CI_REGISTRY
     # the image is tagged as latest, because it is the master branch
     - docker build -t sagital/hugo-site:latest .
-    - docker tag sagital/hugo-site:latest $CI_REGISTRY/sagital/hugo-site:latest
-    - docker push $CI_REGISTRY/sagital/hugo_site:latest
+    - docker tag sagital/hugo-site:latest registry.sagital.ro/sagital/hugo-site:latest
+    - docker push registry.sagital.ro/sagital/hugo_site:latest
   # variables:
   #   GIT_SUBMODULE_STRATEGY: recursive
   # -> this did not work for us, we had to use before_script above.
